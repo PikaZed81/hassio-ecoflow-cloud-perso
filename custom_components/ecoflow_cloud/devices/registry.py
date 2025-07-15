@@ -25,6 +25,7 @@ from .public import (
     river2 as public_river2,
     river2_max as public_river2_max,
     river2_pro as public_river2_pro,
+    river_pro as public_river_pro
     smart_plug as public_smart_plug,
     delta_max as public_delta_max,
     powerstream as public_powerstream,
@@ -73,6 +74,7 @@ device_by_product: OrderedDict[str, Type[BaseDevice]] = OrderedDict[
         "RIVER 2": public_river2.River2,
         "RIVER 2 Max": public_river2_max.River2Max,
         "RIVER 2 Pro": public_river2_pro.River2Pro,
+        "RIVER_PRO": public_river_pro.RiverPro,
         "Smart Plug": public_smart_plug.SmartPlug,
         "PowerStream": public_powerstream.PowerStream,
         "WAVE 2": public_wave2.Wave2,
